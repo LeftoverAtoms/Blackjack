@@ -22,14 +22,15 @@ namespace Blackjack
             Value = value;
         }
 
-        public void Render()
+        public string? GetGraphic()
         {
             if (ASCII.TryGetValue(Value, out var art))
             {
                 char symbol = Symbols[(int)Suit];
                 art = art.Replace('@', symbol);
-                ConsoleColor.Red.WriteLine(art);
+                return art;
             }
+            return null;
         }
 
         private static Dictionary<CardValue, string> ASCII { get; } = new()

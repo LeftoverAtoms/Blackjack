@@ -8,5 +8,12 @@
             Console.WriteLine(text);
             Console.ResetColor(); // Problematic with asynchronous code.
         }
+
+        public static void Write(this ConsoleColor color, string text)
+        {
+            Console.ForegroundColor = color;
+            Console.Write(text);
+            Console.ResetColor(); // Problematic with asynchronous code.
+        }
     }
 }

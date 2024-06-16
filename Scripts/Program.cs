@@ -9,6 +9,10 @@ namespace Blackjack
 
         private static void Main(string[] args)
         {
+            Window.Modify();
+
+            Console.SetWindowSize(1280 / 8, 720 / 16); // Throws an error when ran on a display smaller than 1280x720.
+
             Console.OutputEncoding = Encoding.Unicode;
 
             var table = new Table(maxPlayers: 2);

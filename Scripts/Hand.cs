@@ -91,11 +91,6 @@ namespace Blackjack
             }
         }
 
-        public Hand()
-        {
-            Cards.Add(new Card(Card.Suits.Spades, Card.Names.Ace));
-        }
-
         public void Display()
         {
             // Multi-dimensional collection of cards and their respective rows.

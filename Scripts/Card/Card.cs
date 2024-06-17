@@ -1,19 +1,19 @@
 ﻿namespace Blackjack
 {
-    public readonly struct Card(CardSuit suit, CardValue value)
+    public readonly struct Card(Card.Suits suit, Card.Names name)
     {
-        public string Name { get; } = string.Join(' ', value, "of", suit);
-        public CardSuit Suit { get; } = suit;
-        public CardValue Value { get; } = value;
-    }
+        public string Title { get; } = string.Join(' ', name, "of", suit);
+        public Suits Suit { get; } = suit;
+        public Names Name { get; } = name;
 
-    public enum CardSuit
-    {
-        Hearts, Diamonds, Clubs, Spades
-    }
+        public enum Suits
+        {
+            Hearts, Diamonds, Clubs, Spades
+        }
 
-    public enum CardValue
-    {
-        Ace, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King
+        public enum Names
+        {
+            Ace, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King
+        }
     }
 }

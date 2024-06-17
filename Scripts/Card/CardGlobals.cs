@@ -5,10 +5,10 @@
         public const int Rows = 9;
         public const int Columns = 13;
 
-        public static CardSuit[] Suits { get; } = Enum.GetValues<CardSuit>();
-        public static CardValue[] Values { get; } = Enum.GetValues<CardValue>();
+        public static Card.Suits[] Suits { get; } = Enum.GetValues<Card.Suits>();
+        public static Card.Names[] Values { get; } = Enum.GetValues<Card.Names>();
 
-        private static readonly Dictionary<CardValue, char[,]> m_art;
+        private static readonly Dictionary<Card.Names, char[,]> m_art;
         private static readonly char[] m_symbols = ['♥', '♦', '♣', '♠'];
 
         static CardGlobals()
@@ -16,7 +16,7 @@
             m_art = new()
             {
                 {
-                    CardValue.Ace, ConvertToCharArray(
+                    Card.Names.Ace, ConvertToCharArray(
                     "╭───────────╮",
                     "│A          │",
                     "│           │",
@@ -28,7 +28,7 @@
                     "╰───────────╯"
                 )},
                 {
-                    CardValue.Two, ConvertToCharArray(
+                    Card.Names.Two, ConvertToCharArray(
                     "╭───────────╮",
                     "│2          │",
                     "│     @     │",
@@ -40,7 +40,7 @@
                     "╰───────────╯"
                 )},
                 {
-                    CardValue.Three, ConvertToCharArray(
+                    Card.Names.Three, ConvertToCharArray(
                     "╭───────────╮",
                     "│3          │",
                     "│     @     │",
@@ -52,7 +52,7 @@
                     "╰───────────╯"
                 )},
                 {
-                    CardValue.Four, ConvertToCharArray(
+                    Card.Names.Four, ConvertToCharArray(
                     "╭───────────╮",
                     "│4          │",
                     "│   @   @   │",
@@ -64,7 +64,7 @@
                     "╰───────────╯"
                 )},
                 {
-                    CardValue.Five, ConvertToCharArray(
+                    Card.Names.Five, ConvertToCharArray(
                     "╭───────────╮",
                     "│5          │",
                     "│   @   @   │",
@@ -76,7 +76,7 @@
                     "╰───────────╯"
                 )},
                 {
-                    CardValue.Six, ConvertToCharArray(
+                    Card.Names.Six, ConvertToCharArray(
                     "╭───────────╮",
                     "│6          │",
                     "│   @   @   │",
@@ -88,7 +88,7 @@
                     "╰───────────╯"
                 )},
                 {
-                    CardValue.Seven, ConvertToCharArray(
+                    Card.Names.Seven, ConvertToCharArray(
                     "╭───────────╮",
                     "│7          │",
                     "│   @   @   │",
@@ -100,7 +100,7 @@
                     "╰───────────╯"
                 )},
                 {
-                    CardValue.Eight, ConvertToCharArray(
+                    Card.Names.Eight, ConvertToCharArray(
                     "╭───────────╮",
                     "│8          │",
                     "│   @   @   │",
@@ -112,7 +112,7 @@
                     "╰───────────╯"
                 )},
                 {
-                    CardValue.Nine, ConvertToCharArray(
+                    Card.Names.Nine, ConvertToCharArray(
                     "╭───────────╮",
                     "│9          │",
                     "│   @   @   │",
@@ -124,7 +124,7 @@
                     "╰───────────╯"
                 )},
                 {
-                    CardValue.Ten, ConvertToCharArray(
+                    Card.Names.Ten, ConvertToCharArray(
                     "╭───────────╮",
                     "│10         │",
                     "│   @   @   │",
@@ -136,7 +136,7 @@
                     "╰───────────╯"
                 )},
                 {
-                    CardValue.Jack, ConvertToCharArray(
+                    Card.Names.Jack, ConvertToCharArray(
                     "╭───────────╮",
                     "│J          │",
                     "│           │",
@@ -148,7 +148,7 @@
                     "╰───────────╯"
                 )},
                 {
-                    CardValue.Queen, ConvertToCharArray(
+                    Card.Names.Queen, ConvertToCharArray(
                     "╭───────────╮",
                     "│Q          │",
                     "│           │",
@@ -160,7 +160,7 @@
                     "╰───────────╯"
                 )},
                 {
-                    CardValue.King, ConvertToCharArray(
+                    Card.Names.King, ConvertToCharArray(
                     "╭───────────╮",
                     "│K          │",
                     "│           │",
@@ -177,7 +177,7 @@
         public static char[,] GetGraphic(Card card)
         {
             char[,] output = new char[0, 0];
-            if (m_art.TryGetValue(card.Value, out var input))
+            if (m_art.TryGetValue(card.Name, out var input))
             {
                 output = new char[Rows, Columns];
 

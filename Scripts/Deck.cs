@@ -9,9 +9,9 @@ namespace Blackjack
 
         public Deck()
         {
-            foreach (var suit in Card.Suits)
+            foreach (var suit in CardGlobals.Suits)
             {
-                foreach (var value in Card.Values)
+                foreach (var value in CardGlobals.Values)
                 {
                     Cards.Add(new Card(suit, value));
                 }

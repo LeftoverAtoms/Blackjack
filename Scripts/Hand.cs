@@ -8,14 +8,17 @@ namespace Blackjack
 
         public void Display()
         {
-            var cardArts = Cards.Select(card => card.GetGraphic()?.Split(new[] { "\r\n" }, StringSplitOptions.None)).ToList();
-            int numberOfLines = cardArts.First().Length;
+            // Multi-dimensional collection of cards and their respective rows.
+            var graphics = Cards.Select(card => CardGlobals.GetGraphic(card));
 
-            for (int line = 0; line < numberOfLines; line++)
+            for (int y = 0; y < CardGlobals.Rows; y++)
             {
-                foreach (var cardArt in cardArts)
+                foreach (var card in graphics)
                 {
-                    ConsoleColor.Red.Write(cardArt[line] + " ");
+                    for (int x = 0; x < CardGlobals.Columns; x++)
+                    {
+                        ConsoleColor.Red.Write(card[y, x].ToString());
+                    }
                 }
                 Console.WriteLine();
             }

@@ -1,3 +1,11 @@
-﻿
-using var game = new Blackjack.Game1();
-game.Run();
+﻿namespace Blackjack
+{
+    internal sealed class Program
+    {
+        private static void Main(string[] args)
+        {
+            var game = new Game();
+            game.Run();
+        }
+    }
+}

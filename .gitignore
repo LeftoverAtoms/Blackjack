@@ -1,5 +1,7 @@
-/.vs/
-/bin/
-/obj/
+# Build Folders
+[Bb]in/
+[Oo]bj/
 
+# Visual Studio
+/.vs/
 *.user

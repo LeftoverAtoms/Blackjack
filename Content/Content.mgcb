@@ -22,7 +22,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/AceOfClubs.png
 
 #begin Textures/Cards/AceOfDiamonds.png
@@ -34,7 +34,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/AceOfDiamonds.png
 
 #begin Textures/Cards/AceOfHearts.png
@@ -46,7 +46,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/AceOfHearts.png
 
 #begin Textures/Cards/AceOfSpades.png
@@ -58,7 +58,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/AceOfSpades.png
 
 #begin Textures/Cards/EightOfClubs.png
@@ -70,7 +70,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/EightOfClubs.png
 
 #begin Textures/Cards/EightOfDiamonds.png
@@ -82,7 +82,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/EightOfDiamonds.png
 
 #begin Textures/Cards/EightOfHearts.png
@@ -94,7 +94,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/EightOfHearts.png
 
 #begin Textures/Cards/EightOfSpades.png
@@ -106,7 +106,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/EightOfSpades.png
 
 #begin Textures/Cards/FiveOfClubs.png
@@ -118,7 +118,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/FiveOfClubs.png
 
 #begin Textures/Cards/FiveOfDiamonds.png
@@ -130,7 +130,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/FiveOfDiamonds.png
 
 #begin Textures/Cards/FiveOfHearts.png
@@ -142,7 +142,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/FiveOfHearts.png
 
 #begin Textures/Cards/FiveOfSpades.png
@@ -154,7 +154,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/FiveOfSpades.png
 
 #begin Textures/Cards/FourOfClubs.png
@@ -166,7 +166,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/FourOfClubs.png
 
 #begin Textures/Cards/FourOfDiamonds.png
@@ -178,7 +178,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/FourOfDiamonds.png
 
 #begin Textures/Cards/FourOfHearts.png
@@ -190,7 +190,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/FourOfHearts.png
 
 #begin Textures/Cards/FourOfSpades.png
@@ -202,7 +202,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/FourOfSpades.png
 
 #begin Textures/Cards/JackOfClubs.png
@@ -214,7 +214,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/JackOfClubs.png
 
 #begin Textures/Cards/JackOfDiamonds.png
@@ -226,7 +226,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/JackOfDiamonds.png
 
 #begin Textures/Cards/JackOfHearts.png
@@ -238,7 +238,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/JackOfHearts.png
 
 #begin Textures/Cards/JackOfSpades.png
@@ -250,7 +250,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/JackOfSpades.png
 
 #begin Textures/Cards/KingOfClubs.png
@@ -262,7 +262,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/KingOfClubs.png
 
 #begin Textures/Cards/KingOfDiamonds.png
@@ -274,7 +274,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/KingOfDiamonds.png
 
 #begin Textures/Cards/KingOfHearts.png
@@ -286,7 +286,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/KingOfHearts.png
 
 #begin Textures/Cards/KingOfSpades.png
@@ -298,7 +298,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/KingOfSpades.png
 
 #begin Textures/Cards/NineOfClubs.png
@@ -310,7 +310,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/NineOfClubs.png
 
 #begin Textures/Cards/NineOfDiamonds.png
@@ -322,7 +322,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/NineOfDiamonds.png
 
 #begin Textures/Cards/NineOfHearts.png
@@ -334,7 +334,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/NineOfHearts.png
 
 #begin Textures/Cards/NineOfSpades.png
@@ -346,7 +346,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/NineOfSpades.png
 
 #begin Textures/Cards/QueenOfClubs.png
@@ -358,7 +358,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/QueenOfClubs.png
 
 #begin Textures/Cards/QueenOfDiamonds.png
@@ -370,7 +370,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/QueenOfDiamonds.png
 
 #begin Textures/Cards/QueenOfHearts.png
@@ -382,7 +382,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/QueenOfHearts.png
 
 #begin Textures/Cards/QueenOfSpades.png
@@ -394,7 +394,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/QueenOfSpades.png
 
 #begin Textures/Cards/SevenOfClubs.png
@@ -406,7 +406,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/SevenOfClubs.png
 
 #begin Textures/Cards/SevenOfDiamonds.png
@@ -418,7 +418,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/SevenOfDiamonds.png
 
 #begin Textures/Cards/SevenOfHearts.png
@@ -430,7 +430,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/SevenOfHearts.png
 
 #begin Textures/Cards/SevenOfSpades.png
@@ -442,7 +442,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/SevenOfSpades.png
 
 #begin Textures/Cards/SixOfClubs.png
@@ -454,7 +454,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/SixOfClubs.png
 
 #begin Textures/Cards/SixOfDiamonds.png
@@ -466,7 +466,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/SixOfDiamonds.png
 
 #begin Textures/Cards/SixOfHearts.png
@@ -478,7 +478,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/SixOfHearts.png
 
 #begin Textures/Cards/SixOfSpades.png
@@ -490,7 +490,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/SixOfSpades.png
 
 #begin Textures/Cards/TenOfClubs.png
@@ -502,7 +502,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/TenOfClubs.png
 
 #begin Textures/Cards/TenOfDiamonds.png
@@ -514,7 +514,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/TenOfDiamonds.png
 
 #begin Textures/Cards/TenOfHearts.png
@@ -526,7 +526,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/TenOfHearts.png
 
 #begin Textures/Cards/TenOfSpades.png
@@ -538,7 +538,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/TenOfSpades.png
 
 #begin Textures/Cards/ThreeOfClubs.png
@@ -550,7 +550,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/ThreeOfClubs.png
 
 #begin Textures/Cards/ThreeOfDiamonds.png
@@ -562,7 +562,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/ThreeOfDiamonds.png
 
 #begin Textures/Cards/ThreeOfHearts.png
@@ -574,7 +574,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/ThreeOfHearts.png
 
 #begin Textures/Cards/ThreeOfSpades.png
@@ -586,7 +586,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/ThreeOfSpades.png
 
 #begin Textures/Cards/TwoOfClubs.png
@@ -598,7 +598,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/TwoOfClubs.png
 
 #begin Textures/Cards/TwoOfDiamonds.png
@@ -610,7 +610,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/TwoOfDiamonds.png
 
 #begin Textures/Cards/TwoOfHearts.png
@@ -622,7 +622,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/TwoOfHearts.png
 
 #begin Textures/Cards/TwoOfSpades.png
@@ -634,6 +634,6 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=Compressed
 /build:Textures/Cards/TwoOfSpades.png
 

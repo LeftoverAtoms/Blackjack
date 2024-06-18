@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blackjack", "Blackjack.csproj", "{E2C12168-9955-4EDB-910A-DFC08619BDDC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopGL", "DesktopGL\DesktopGL.csproj", "{74BABA3E-D424-4620-9661-C1F767759A52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{E2C12168-9955-4EDB-910A-DFC08619BDDC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,6 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74BABA3E-D424-4620-9661-C1F767759A52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74BABA3E-D424-4620-9661-C1F767759A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74BABA3E-D424-4620-9661-C1F767759A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74BABA3E-D424-4620-9661-C1F767759A52}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E2C12168-9955-4EDB-910A-DFC08619BDDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E2C12168-9955-4EDB-910A-DFC08619BDDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2C12168-9955-4EDB-910A-DFC08619BDDC}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -12,7 +12,7 @@ namespace Blackjack
         public int GetScore()
         {
             int score = 0;
-            int aces = 0;
+            bool HasAce = false;
 
             foreach (var card in Cards)
             {
@@ -20,12 +20,12 @@ namespace Blackjack
 
                 if (card.Name == "Ace")
                 {
-                    aces += 1;
+                    HasAce = true;
                 }
             }
 
             // Eligible for the ace bonus!
-            if (aces == 1 && score <= 11)
+            if (HasAce && score <= 11)
             {
                 score += 10;
             }

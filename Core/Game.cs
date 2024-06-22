@@ -1,14 +1,21 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System.Collections.Generic;
 
 namespace Blackjack
 {
     public class Game : Microsoft.Xna.Framework.Game
     {
+        public static List<Entity> Entities { get; }
+
         private GraphicsDeviceManager m_graphics;
         private SpriteBatch m_spriteBatch;
 
+        static Game()
+        {
+            Entities = new List<Entity>();
+        }
         public Game()
         {
             m_graphics = new GraphicsDeviceManager(this);
@@ -36,6 +43,10 @@ namespace Blackjack
                 Exit();
 
             // TODO: Add your update logic here
+            foreach (var entity in Entities)
+            {
+                entity.Update();
+            }
 
             base.Update(gameTime);
         }
@@ -45,6 +56,12 @@ namespace Blackjack
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
+            m_spriteBatch.Begin();
+            foreach (var entity in Entities)
+            {
+                entity.Draw(m_spriteBatch);
+            }
+            m_spriteBatch.End();
 
             base.Draw(gameTime);
         }

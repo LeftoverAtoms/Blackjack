@@ -12,7 +12,23 @@ namespace Blackjack
 
         public void Enter(Table table)
         {
-            int seat = Array.FindIndex(table.Players, plr => (plr == null));
+            int seat = -1;
+
+            // Try to sit at a random spot at the table.
+            int attempts = 0;
+            var rng = new Random();
+            while (attempts < 64)
+            {
+                int index = rng.Next(table.Players.Length);
+                if (table.Players[index] == null)
+                {
+                    seat = index;
+                    break;
+                }
+                attempts++;
+            }
+
+            // Found a seat.
             if (seat != -1)
             {
                 Table = table;

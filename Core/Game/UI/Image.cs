@@ -6,6 +6,7 @@ namespace Blackjack.UI
     public class Image : Entity
     {
         public Texture2D Texture { get; set; }
+        public Rectangle? Source { get; set; } = null;
         public Color Color { get; set; } = Color.White;
 
         public Image()
@@ -20,7 +21,7 @@ namespace Blackjack.UI
         public override void Draw(SpriteBatch spriteBatch)
         {
             var rect = new Rectangle((int)Position.X, (int)Position.Y, (int)Size.X, (int)Size.Y);
-            spriteBatch.Draw(Texture, rect, null, Color, 0, Vector2.Zero, SpriteEffects.None, 0);
+            spriteBatch.Draw(Texture, rect, Source, Color, 0, Vector2.Zero, SpriteEffects.None, 0);
         }
     }
 }

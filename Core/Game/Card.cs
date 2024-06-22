@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework.Content;
+﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
@@ -10,15 +11,18 @@ namespace Blackjack.UI
         public static string[] Suits { get; } = ["Hearts", "Diamonds", "Clubs", "Spades"];
         public static string[] Names { get; } = ["Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"];
 
-        public static Dictionary<(string, string), Texture2D> Textures { get; } = new(52);
-
         public string Title { get; }
         public string Suit { get; }
         public string Name { get; }
 
+        private static Texture2D m_texture;
+        private static Dictionary<(string, string), Rectangle> m_atlas;
+
         public Card(string suit, string name)
         {
-            Texture = Card.Textures[(suit, name)];
+            Texture = m_texture;
+            Source = m_atlas[(suit, name)];
+
             Title = string.Join(' ', name, "of", suit);
             Suit = suit;
             Name = name;
@@ -26,61 +30,69 @@ namespace Blackjack.UI
 
         public static void LoadContent(ContentManager content)
         {
-            Textures.Add(("Hearts", "Ace"), content.Load<Texture2D>("Textures/Cards/AceOfHearts"));
-            Textures.Add(("Hearts", "Two"), content.Load<Texture2D>("Textures/Cards/TwoOfHearts"));
-            Textures.Add(("Hearts", "Three"), content.Load<Texture2D>("Textures/Cards/ThreeOfHearts"));
-            Textures.Add(("Hearts", "Four"), content.Load<Texture2D>("Textures/Cards/FourOfHearts"));
-            Textures.Add(("Hearts", "Five"), content.Load<Texture2D>("Textures/Cards/FiveOfHearts"));
-            Textures.Add(("Hearts", "Six"), content.Load<Texture2D>("Textures/Cards/SixOfHearts"));
-            Textures.Add(("Hearts", "Seven"), content.Load<Texture2D>("Textures/Cards/SevenOfHearts"));
-            Textures.Add(("Hearts", "Eight"), content.Load<Texture2D>("Textures/Cards/EightOfHearts"));
-            Textures.Add(("Hearts", "Nine"), content.Load<Texture2D>("Textures/Cards/NineOfHearts"));
-            Textures.Add(("Hearts", "Ten"), content.Load<Texture2D>("Textures/Cards/TenOfHearts"));
-            Textures.Add(("Hearts", "Jack"), content.Load<Texture2D>("Textures/Cards/JackOfHearts"));
-            Textures.Add(("Hearts", "Queen"), content.Load<Texture2D>("Textures/Cards/QueenOfHearts"));
-            Textures.Add(("Hearts", "King"), content.Load<Texture2D>("Textures/Cards/KingOfHearts"));
+            m_texture = content.Load<Texture2D>("Textures/Cards");
+            m_atlas = new Dictionary<(string, string), Rectangle>(52)
+            {
+                // Clubs
+                [(Suits[2], Names[0])] = new Rectangle(3, 3, 58, 58),
+                [(Suits[2], Names[1])] = new Rectangle(259, 3, 58, 58),
+                [(Suits[2], Names[2])] = new Rectangle(3, 67, 58, 58),
+                [(Suits[2], Names[3])] = new Rectangle(259, 67, 58, 58),
+                [(Suits[2], Names[4])] = new Rectangle(3, 131, 58, 58),
+                [(Suits[2], Names[5])] = new Rectangle(259, 131, 58, 58),
+                [(Suits[2], Names[6])] = new Rectangle(3, 195, 58, 58),
+                [(Suits[2], Names[7])] = new Rectangle(259, 195, 58, 58),
+                [(Suits[2], Names[8])] = new Rectangle(3, 259, 58, 58),
+                [(Suits[2], Names[9])] = new Rectangle(259, 259, 58, 58),
+                [(Suits[2], Names[10])] = new Rectangle(3, 323, 58, 58),
+                [(Suits[2], Names[11])] = new Rectangle(259, 323, 58, 58),
+                [(Suits[2], Names[12])] = new Rectangle(3, 387, 58, 58),
 
-            Textures.Add(("Diamonds", "Ace"), content.Load<Texture2D>("Textures/Cards/AceOfDiamonds"));
-            Textures.Add(("Diamonds", "Two"), content.Load<Texture2D>("Textures/Cards/TwoOfDiamonds"));
-            Textures.Add(("Diamonds", "Three"), content.Load<Texture2D>("Textures/Cards/ThreeOfDiamonds"));
-            Textures.Add(("Diamonds", "Four"), content.Load<Texture2D>("Textures/Cards/FourOfDiamonds"));
-            Textures.Add(("Diamonds", "Five"), content.Load<Texture2D>("Textures/Cards/FiveOfDiamonds"));
-            Textures.Add(("Diamonds", "Six"), content.Load<Texture2D>("Textures/Cards/SixOfDiamonds"));
-            Textures.Add(("Diamonds", "Seven"), content.Load<Texture2D>("Textures/Cards/SevenOfDiamonds"));
-            Textures.Add(("Diamonds", "Eight"), content.Load<Texture2D>("Textures/Cards/EightOfDiamonds"));
-            Textures.Add(("Diamonds", "Nine"), content.Load<Texture2D>("Textures/Cards/NineOfDiamonds"));
-            Textures.Add(("Diamonds", "Ten"), content.Load<Texture2D>("Textures/Cards/TenOfDiamonds"));
-            Textures.Add(("Diamonds", "Jack"), content.Load<Texture2D>("Textures/Cards/JackOfDiamonds"));
-            Textures.Add(("Diamonds", "Queen"), content.Load<Texture2D>("Textures/Cards/QueenOfDiamonds"));
-            Textures.Add(("Diamonds", "King"), content.Load<Texture2D>("Textures/Cards/KingOfDiamonds"));
+                // Diamonds
+                [(Suits[1], Names[0])] = new Rectangle(67, 3, 58, 58),
+                [(Suits[1], Names[1])] = new Rectangle(323, 3, 58, 58),
+                [(Suits[1], Names[2])] = new Rectangle(67, 67, 58, 58),
+                [(Suits[1], Names[3])] = new Rectangle(323, 67, 58, 58),
+                [(Suits[1], Names[4])] = new Rectangle(67, 131, 58, 58),
+                [(Suits[1], Names[5])] = new Rectangle(323, 131, 58, 58),
+                [(Suits[1], Names[6])] = new Rectangle(67, 195, 58, 58),
+                [(Suits[1], Names[7])] = new Rectangle(323, 195, 58, 58),
+                [(Suits[1], Names[8])] = new Rectangle(67, 259, 58, 58),
+                [(Suits[1], Names[9])] = new Rectangle(323, 259, 58, 58),
+                [(Suits[1], Names[10])] = new Rectangle(67, 323, 58, 58),
+                [(Suits[1], Names[11])] = new Rectangle(323, 323, 58, 58),
+                [(Suits[1], Names[12])] = new Rectangle(67, 387, 58, 58),
 
-            Textures.Add(("Clubs", "Ace"), content.Load<Texture2D>("Textures/Cards/AceOfClubs"));
-            Textures.Add(("Clubs", "Two"), content.Load<Texture2D>("Textures/Cards/TwoOfClubs"));
-            Textures.Add(("Clubs", "Three"), content.Load<Texture2D>("Textures/Cards/ThreeOfClubs"));
-            Textures.Add(("Clubs", "Four"), content.Load<Texture2D>("Textures/Cards/FourOfClubs"));
-            Textures.Add(("Clubs", "Five"), content.Load<Texture2D>("Textures/Cards/FiveOfClubs"));
-            Textures.Add(("Clubs", "Six"), content.Load<Texture2D>("Textures/Cards/SixOfClubs"));
-            Textures.Add(("Clubs", "Seven"), content.Load<Texture2D>("Textures/Cards/SevenOfClubs"));
-            Textures.Add(("Clubs", "Eight"), content.Load<Texture2D>("Textures/Cards/EightOfClubs"));
-            Textures.Add(("Clubs", "Nine"), content.Load<Texture2D>("Textures/Cards/NineOfClubs"));
-            Textures.Add(("Clubs", "Ten"), content.Load<Texture2D>("Textures/Cards/TenOfClubs"));
-            Textures.Add(("Clubs", "Jack"), content.Load<Texture2D>("Textures/Cards/JackOfClubs"));
-            Textures.Add(("Clubs", "Queen"), content.Load<Texture2D>("Textures/Cards/QueenOfClubs"));
-            Textures.Add(("Clubs", "King"), content.Load<Texture2D>("Textures/Cards/KingOfClubs"));
+                // Hearts
+                [(Suits[0], Names[0])] = new Rectangle(131, 3, 58, 58),
+                [(Suits[0], Names[1])] = new Rectangle(387, 3, 58, 58),
+                [(Suits[0], Names[2])] = new Rectangle(131, 67, 58, 58),
+                [(Suits[0], Names[3])] = new Rectangle(387, 67, 58, 58),
+                [(Suits[0], Names[4])] = new Rectangle(131, 131, 58, 58),
+                [(Suits[0], Names[5])] = new Rectangle(387, 131, 58, 58),
+                [(Suits[0], Names[6])] = new Rectangle(131, 195, 58, 58),
+                [(Suits[0], Names[7])] = new Rectangle(387, 195, 58, 58),
+                [(Suits[0], Names[8])] = new Rectangle(131, 259, 58, 58),
+                [(Suits[0], Names[9])] = new Rectangle(387, 259, 58, 58),
+                [(Suits[0], Names[10])] = new Rectangle(131, 323, 58, 58),
+                [(Suits[0], Names[11])] = new Rectangle(387, 323, 58, 58),
+                [(Suits[0], Names[12])] = new Rectangle(131, 387, 58, 58),
 
-            Textures.Add(("Spades", "Ace"), content.Load<Texture2D>("Textures/Cards/AceOfSpades"));
-            Textures.Add(("Spades", "Two"), content.Load<Texture2D>("Textures/Cards/TwoOfSpades"));
-            Textures.Add(("Spades", "Three"), content.Load<Texture2D>("Textures/Cards/ThreeOfSpades"));
-            Textures.Add(("Spades", "Four"), content.Load<Texture2D>("Textures/Cards/FourOfSpades"));
-            Textures.Add(("Spades", "Five"), content.Load<Texture2D>("Textures/Cards/FiveOfSpades"));
-            Textures.Add(("Spades", "Six"), content.Load<Texture2D>("Textures/Cards/SixOfSpades"));
-            Textures.Add(("Spades", "Seven"), content.Load<Texture2D>("Textures/Cards/SevenOfSpades"));
-            Textures.Add(("Spades", "Eight"), content.Load<Texture2D>("Textures/Cards/EightOfSpades"));
-            Textures.Add(("Spades", "Nine"), content.Load<Texture2D>("Textures/Cards/NineOfSpades"));
-            Textures.Add(("Spades", "Ten"), content.Load<Texture2D>("Textures/Cards/TenOfSpades"));
-            Textures.Add(("Spades", "Jack"), content.Load<Texture2D>("Textures/Cards/JackOfSpades"));
-            Textures.Add(("Spades", "Queen"), content.Load<Texture2D>("Textures/Cards/QueenOfSpades"));
-            Textures.Add(("Spades", "King"), content.Load<Texture2D>("Textures/Cards/KingOfSpades"));
+                // Spades
+                [(Suits[3], Names[0])] = new Rectangle(195, 3, 58, 58),
+                [(Suits[3], Names[1])] = new Rectangle(451, 3, 58, 58),
+                [(Suits[3], Names[2])] = new Rectangle(195, 67, 58, 58),
+                [(Suits[3], Names[3])] = new Rectangle(451, 67, 58, 58),
+                [(Suits[3], Names[4])] = new Rectangle(195, 131, 58, 58),
+                [(Suits[3], Names[5])] = new Rectangle(451, 131, 58, 58),
+                [(Suits[3], Names[6])] = new Rectangle(195, 195, 58, 58),
+                [(Suits[3], Names[7])] = new Rectangle(451, 195, 58, 58),
+                [(Suits[3], Names[8])] = new Rectangle(195, 259, 58, 58),
+                [(Suits[3], Names[9])] = new Rectangle(451, 259, 58, 58),
+                [(Suits[3], Names[10])] = new Rectangle(195, 323, 58, 58),
+                [(Suits[3], Names[11])] = new Rectangle(451, 323, 58, 58),
+                [(Suits[3], Names[12])] = new Rectangle(195, 387, 58, 58),
+            };
         }
 
         public int GetValue()

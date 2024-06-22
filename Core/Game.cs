@@ -35,6 +35,7 @@ namespace Blackjack
             m_spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+            Card.LoadContent(Content);
         }
 
         protected override void Update(GameTime gameTime)

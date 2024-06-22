@@ -1,11 +1,12 @@
-﻿using Microsoft.Xna.Framework.Content;
+﻿using Blackjack.UI;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
 
 namespace Blackjack
 {
-    public readonly struct Card
+    public sealed class Card : Image
     {
         public static string[] Suits { get; } = ["Hearts", "Diamonds", "Clubs", "Spades"];
         public static string[] Names { get; } = ["Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"];
@@ -18,6 +19,7 @@ namespace Blackjack
 
         public Card(string suit, string name)
         {
+            Texture = Card.Textures[(suit, name)];
             Title = string.Join(' ', name, "of", suit);
             Suit = suit;
             Name = name;

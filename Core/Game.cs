@@ -25,8 +25,6 @@ namespace Blackjack
 
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
-
             base.Initialize();
         }
 
@@ -34,16 +32,17 @@ namespace Blackjack
         {
             m_spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // TODO: use this.Content to load your game content here
             Card.LoadContent(Content);
         }
 
         protected override void Update(GameTime gameTime)
         {
+            // TODO: Make menu appear.
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+            {
                 Exit();
+            }
 
-            // TODO: Add your update logic here
             foreach (var entity in Entities)
             {
                 entity.Update();
@@ -54,9 +53,8 @@ namespace Blackjack
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Black);
 
-            // TODO: Add your drawing code here
             m_spriteBatch.Begin();
             foreach (var entity in Entities)
             {

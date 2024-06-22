@@ -32,6 +32,7 @@ namespace Blackjack
         {
             m_spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            Font.LoadContent(Content);
             Card.LoadContent(Content);
         }
 

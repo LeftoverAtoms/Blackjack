@@ -21,7 +21,8 @@ namespace Blackjack.UI
         public override void Draw(SpriteBatch spriteBatch)
         {
             var rect = new Rectangle((int)Position.X, (int)Position.Y, (int)Size.X, (int)Size.Y);
-            spriteBatch.Draw(Texture, rect, Source, Color, 0, Vector2.Zero, SpriteEffects.None, 0);
+            var center = new Vector2(Size.X / 2, Size.Y / 2);
+            spriteBatch.Draw(Texture, rect, Source, Color, 0, center, SpriteEffects.None, 0);
         }
     }
 }

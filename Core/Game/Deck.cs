@@ -27,6 +27,7 @@ namespace Blackjack
             var card = Cards[0];
             Cards.RemoveAt(0);
             Dealt.Add(card);
+            card.IsVisible = true;
             return card;
         }
 

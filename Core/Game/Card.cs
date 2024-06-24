@@ -15,6 +15,8 @@ namespace Blackjack.UI
         public string Suit { get; }
         public string Name { get; }
 
+        public bool IsVisible { get; set; }
+
         private static Texture2D m_texture;
         private static Dictionary<(string, string), Rectangle> m_atlas;
 
@@ -119,6 +121,14 @@ namespace Blackjack.UI
                 // Invalid card name.
                 _ => throw new NotImplementedException()
             };
+        }
+
+        public override void Draw(SpriteBatch spriteBatch)
+        {
+            if (IsVisible)
+            {
+                base.Draw(spriteBatch);
+            }
         }
     }
 }

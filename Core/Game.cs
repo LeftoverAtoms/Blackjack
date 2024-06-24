@@ -8,6 +8,8 @@ namespace Blackjack
 {
     public class Game : Microsoft.Xna.Framework.Game
     {
+        public static BasePawn LocalClient { get; private set; }
+
         public static List<Entity> Entities { get; }
 
         private GraphicsDeviceManager m_graphics;
@@ -26,6 +28,7 @@ namespace Blackjack
 
         protected override void Initialize()
         {
+            LocalClient = new Human();
             base.Initialize();
         }
 

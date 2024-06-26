@@ -12,7 +12,10 @@ namespace Blackjack
 
         public static List<Entity> Entities { get; }
 
-        private GraphicsDeviceManager m_graphics;
+        public static Vector2 WindowSize { get; private set; }
+        public static Vector2 WindowHalfSize { get; private set; }
+
+        private static GraphicsDeviceManager m_graphics;
         private SpriteBatch m_spriteBatch;
 
         static Game()
@@ -28,6 +31,8 @@ namespace Blackjack
 
         protected override void Initialize()
         {
+            SetWindowSize(1920, 1080);
+
             LocalClient = new Human();
             base.Initialize();
         }
@@ -68,6 +73,16 @@ namespace Blackjack
             m_spriteBatch.End();
 
             base.Draw(gameTime);
+        }
+
+        public static void SetWindowSize(int width, int height)
+        {
+            WindowSize = new Vector2(width, height);
+            WindowHalfSize = WindowSize / 2;
+
+            m_graphics.PreferredBackBufferWidth = width;
+            m_graphics.PreferredBackBufferHeight = height;
+            m_graphics.ApplyChanges();
         }
     }
 }

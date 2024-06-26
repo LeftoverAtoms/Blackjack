@@ -43,7 +43,7 @@ namespace Blackjack
                 var pawn = Players[index];
                 if (pawn != null)
                 {
-                    var position = Extensions.GetVertex(angle * index, 192, 128) + new Vector2(256, 256);
+                    var position = Extensions.GetVertex(angle * index, 192, 128) + Game.WindowHalfSize;
                     pawn.Hands[0].Cards[0].Position = position; // Hack
                 }
 

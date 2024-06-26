@@ -24,7 +24,7 @@ namespace Blackjack.UI
         {
             Texture = m_texture;
             Source = m_atlas[(suit, name)];
-            Size = new Vector2(64, 96);
+            Size = new Vector2(48, 80);
 
             Title = string.Join(' ', name, "of", suit);
             Suit = suit;

@@ -8,6 +8,7 @@ namespace Blackjack.UI
         public Texture2D Texture { get; set; }
         public Rectangle? Source { get; set; } = null;
         public Color Color { get; set; } = Color.White;
+        public float Layer { get; set; } = 0;
 
         public Image()
         {
@@ -22,7 +23,7 @@ namespace Blackjack.UI
         {
             var rect = new Rectangle((int)Position.X, (int)Position.Y, (int)Size.X, (int)Size.Y);
             var center = new Vector2(Size.X / 2, Size.Y / 2);
-            spriteBatch.Draw(Texture, rect, Source, Color, 0, center, SpriteEffects.None, 0);
+            spriteBatch.Draw(Texture, rect, Source, Color, 0, center, SpriteEffects.None, Layer);
         }
     }
 }

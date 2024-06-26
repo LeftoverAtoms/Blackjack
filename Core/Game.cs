@@ -60,7 +60,7 @@ namespace Blackjack
         {
             GraphicsDevice.Clear(Color.Black);
 
-            m_spriteBatch.Begin();
+            m_spriteBatch.Begin(SpriteSortMode.FrontToBack);
             foreach (var entity in Entities)
             {
                 entity.Draw(m_spriteBatch);
